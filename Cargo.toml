@@ -1,10 +1,10 @@
 [package]
 name = "grb-sys2"
-version = "10.1.0"
+version = "12.0.0"
 edition = "2018"
 build = "build.rs"
 license = "MIT"
-links = "gurobi"
+links = "gurobi120"
 authors = ["Yannik Rist <yannik.rist@uqconnect.edu.au>"]
 description = "Gurobi C API FFI declarations."
 homepage = "https://github.com/ykrist/grb-sys2/"
