@@ -92,6 +92,9 @@ pub fn main() {
     if cfg!(feature = "build_script_tests") {
         return;
     }
+    if std::env::var("DOCS_RS").is_ok() {
+        return;
+    }
     println!("cargo:rerun-if-env-changed=GUROBI_HOME");
     println!("cargo:rerun-if-env-changed=GUROBI_LIBNAME");
 
